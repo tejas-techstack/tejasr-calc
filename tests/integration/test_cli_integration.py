@@ -7,13 +7,11 @@ import pytest
 
 
 class TestCLIIntegration:
-    """Test CLI application integrating with
-    calculator module"""
+    """Test CLI application integrating with calculator module"""
 
     def run_cli(self, *args):
-        """Helper method to run CLI and capture
-        output"""
-        cmd = [sys.executable, ‘-m’, 'src.cli'] + list(args)
+        """Helper method to run CLI and capture output"""
+        cmd = [sys.executable, '-m', 'src.cli'] + list(args)
         result = subprocess.run(cmd, capture_output=True, text=True, cwd='.')
         return result
 
@@ -42,8 +40,7 @@ class TestCLIIntegration:
         assert result.stdout.strip() == '4'
 
     def test_cli_error_handling_integration(self):
-        """Test CLI properly handles calculator
-        errors"""
+        """Test CLI properly handles calculator errors"""
         result = self.run_cli('divide', '10', '0')
         assert result.returncode == 1
         assert 'Cannot divide by zero' in result.stdout
@@ -56,12 +53,10 @@ class TestCLIIntegration:
 
 
 class TestCalculatorModuleIntegration:
-    """Test calculator module functions work
-    together"""
+    """Test calculator module functions work together"""
 
     def test_chained_operations(self):
-        """Test using results from one operation in
-        another"""
+        """Test using results from one operation in another"""
         from src.calculator import add, multiply, divide
 
         # Calculate (5 + 3) * 2 / 4
@@ -72,15 +67,14 @@ class TestCalculatorModuleIntegration:
         assert step3 == 4.0
 
     def test_complex_calculation_integration(self):
-        """Test complex calculation using multiple
-        functions"""
+        """Test complex calculation using multiple functions"""
         from src.calculator import power, square_root, add
 
-        # Calculate sqrt(3^2 + 4^2) = 5 (Pythagorean
-        # theorem)
+        # Calculate sqrt(3^2 + 4^2) = 5 (Pythagorean theorem)
         a_squared = power(3, 2)  # 9
         b_squared = power(4, 2)  # 16
         sum_squares = add(a_squared, b_squared)  # 25
         hypotenuse = square_root(sum_squares)  # 5
+
         assert hypotenuse == 5.0
 
