@@ -1,0 +1,15 @@
+************* Module src.calculator
+src/calculator.py:15:0: W0311: Bad indentation. Found 5 spaces, expected 4 (bad-indentation)
+src/calculator.py:16:0: W0311: Bad indentation. Found 5 spaces, expected 4 (bad-indentation)
+src/calculator.py:18:0: W0311: Bad indentation. Found 5 spaces, expected 4 (bad-indentation)
+src/calculator.py:19:0: W0311: Bad indentation. Found 5 spaces, expected 4 (bad-indentation)
+src/calculator.py:22:0: W0311: Bad indentation. Found 5 spaces, expected 4 (bad-indentation)
+src/calculator.py:23:0: W0311: Bad indentation. Found 5 spaces, expected 4 (bad-indentation)
+src/calculator.py:26:0: W0311: Bad indentation. Found 5 spaces, expected 4 (bad-indentation)
+src/calculator.py:27:0: W0311: Bad indentation. Found 5 spaces, expected 4 (bad-indentation)
+src/calculator.py:28:0: W0311: Bad indentation. Found 9 spaces, expected 8 (bad-indentation)
+src/calculator.py:29:0: W0311: Bad indentation. Found 5 spaces, expected 4 (bad-indentation)
+
+------------------------------------------------------------------
+Your code has been rated at 4.44/10 (previous run: 4.44/10, +0.00)
+
