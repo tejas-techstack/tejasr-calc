@@ -1,6 +1,11 @@
 ************* Module src.cli
-src/cli.py:8:52: E0001: Parsing failed: 'trailing comma not allowed without surrounding parentheses (src.cli, line 8)' (syntax-error)
+src/cli.py:8:0: E0401: Unable to import 'calculator' (import-error)
+src/cli.py:39:11: W0718: Catching too general exception Exception (broad-exception-caught)
+src/cli.py:45:4: E1120: No value for argument 'operation' in function call (no-value-for-parameter)
+src/cli.py:45:4: E1120: No value for argument 'num1' in function call (no-value-for-parameter)
+src/cli.py:8:0: W0611: Unused power imported from calculator (unused-import)
+src/cli.py:8:0: W0611: Unused square_root imported from calculator (unused-import)
 
 ------------------------------------------------------------------
-Your code has been rated at 7.22/10 (previous run: 7.22/10, +0.00)
+Your code has been rated at 5.91/10 (previous run: 5.91/10, +0.00)
 
