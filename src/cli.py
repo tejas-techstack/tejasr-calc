@@ -35,9 +35,7 @@ def calculate(operation, num1, num2=None):
             click.echo(int(result))
         else:
             click.echo(f"{result:.2f}")
-    except ZeroDivisionError:
-        print("Cannot divide by zero")
-        sys.exit(1)
+
     except ValueError as e:
         click.echo(f"Error: {e}")
         sys.exit(1)
